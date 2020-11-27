@@ -61,6 +61,7 @@ make_filename <- function(year) {
 #' fars_read_years(2015)
 #' fars_read_years(years = c(2013:2015)
 #'
+#' @export
 #' @importFrom magrittr %>%
 fars_read_years <- function(years) {
         lapply(years, function(year) {
