@@ -24,4 +24,5 @@ Imports:
     magrittr,
     maps,
     readr,
-    tibble
+    tibble,
+    qpdf
