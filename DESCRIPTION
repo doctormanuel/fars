@@ -16,3 +16,4 @@ Suggests:
 VignetteBuilder: knitr
 URL: https://github.com/doctormanuel/fars
 BugReports: https://github.com/doctormanuel/fars/issues
+RoxygenNote: 7.1.1
