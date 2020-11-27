@@ -26,7 +26,9 @@ can be done using the \code{filename} argument. If the file does not exists,
 it generates an error message.
 }
 \examples{
+\dontrun{
 fars_read("accident_2013.csv.bz2")
 fars_read(filename = "accident_2013.csv.bz2")
+}
 
 }

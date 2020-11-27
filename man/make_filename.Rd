@@ -25,6 +25,8 @@ Analysis Reporting System (FARS), provided a year. The year is passed onto
 the function as an argument, which can be done using the \code{year} argument.
 }
 \examples{
+\dontrun{
 make_filename(2015)
 make_filename(year = 2015)
+}
 }

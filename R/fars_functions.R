@@ -10,8 +10,10 @@
 #' @return This function returns a tibble containing the data from the file.
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2013.csv.bz2")
 #' fars_read(filename = "accident_2013.csv.bz2")
+#' }
 #'
 #' @importFrom readr read_csv
 #' @importFrom tibble as_tibble
@@ -36,8 +38,10 @@ fars_read <- function(filename) {
 #'    corresponding to the provided year data from the FARS database.
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2015)
 #' make_filename(year = 2015)
+#' }
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -58,8 +62,10 @@ make_filename <- function(year) {
 #'    corresponding to a particular year of the FARS database.
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2015)
 #' fars_read_years(years = c(2013:2015)
+#' }
 #'
 #' @export
 #' @importFrom magrittr %>%
@@ -89,8 +95,10 @@ fars_read_years <- function(years) {
 #'    of the requested years of the FARS database.
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2015)
 #' fars_summarize_years(years = c(2013:2015))
+#' }
 #'
 #' @importFrom tidyr spread
 #' @importFrom magrittr %>%
@@ -122,8 +130,10 @@ fars_summarize_years <- function(years) {
 #'    a particular year and state.
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(12,2015)
 #' fars_map_state(state.num = 12,year = 2015)
+#' }
 #'
 #' @importFrom maps map
 #' @importFrom graphics points

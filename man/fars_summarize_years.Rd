@@ -25,7 +25,9 @@ Reporting System (FARS) for each of the years requested as a vector with an
 argument passed onto the function, which can be done using the \code{years} argument.
 }
 \examples{
+\dontrun{
 fars_summarize_years(2015)
 fars_summarize_years(years = c(2013:2015))
+}
 
 }

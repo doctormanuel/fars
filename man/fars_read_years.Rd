@@ -31,7 +31,9 @@ the \code{years} argument. If any of the provided years is not in the correct
 format, it returns an error message.
 }
 \examples{
+\dontrun{
 fars_read_years(2015)
 fars_read_years(years = c(2013:2015)
+}
 
 }

@@ -34,7 +34,9 @@ If there are no accidents for the selected state and year, it provides a
 message.
 }
 \examples{
+\dontrun{
 fars_map_state(12,2015)
 fars_map_state(state.num = 12,year = 2015)
+}
 
 }
