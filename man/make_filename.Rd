@@ -27,5 +27,4 @@ the function as an argument, which can be done using the \code{year} argument.
 \examples{
 make_filename(2015)
 make_filename(year = 2015)
-
 }
