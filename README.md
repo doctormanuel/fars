@@ -2,6 +2,7 @@
 # fars
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/doctormanuel/fars.svg?branch=master)](https://travis-ci.com/doctormanuel/fars)
 <!-- badges: end -->
 
 The goal of FARS is to provide a set of tools to read, analyze and visualize
