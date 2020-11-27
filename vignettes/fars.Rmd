@@ -1,0 +1,51 @@
+---
+title: "Introduction to FARS"
+author: "Manuel"
+date: "2020-11-26"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The FARS R package provides functionality to read, analyze and visualize data
+acquired from the databases of the US National Highway Traffic Safety
+Administration's Fatality Analysis Reporting System (FARS).
+
+## fars_read_years
+This function reads the data from existing FARS files for each of the years
+provided in an input argument as a vector containing a set of 4-digit years. The
+function returns a list of data, with one element for each year, each being a
+tibble with that year's FARS data. Example:
+```{r, eval=FALSE}
+fars_read_years(2015)
+fars_read_years(years = c(2013:2015)
+```
+
+
+## fars_summarize_years
+This function reads the data from existing FARS files for each of the years
+provided in an input argument as a vector containing a set of 4-digit years. The
+function returns a tibble containing a monthly summary of the FARS data for each
+of the requested years of the FARS database. Example:
+```{r, eval=FALSE}
+fars_summarize_years(2015)
+fars_summarize_years(years = c(2013:2015))
+```
+
+
+## fars_map_state
+This function reads the data from existing FARS files for the requested year and
+plots a map with the FARS data for the requested state and year. Example:
+```{r, eval=FALSE}
+fars_map_state(12,2015)
+fars_map_state(state.num = 12,year = 2015)
+```
